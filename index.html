@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app = 'ShoppingListApp'>
+<head>
+    <meta charset="UTF-8">
+    <script src="angular-1.8.2/angular.min.js"></script>
+        <script src="app.js"></script>
+         <link rel="stylesheet" href="style.css">
+        <title>Angular_exam</title>
+</head>
+<body>
+    <div>
+    <div class="center">
+        <h2>Список йогуртів</h2>
+        <h3>Варіант-17</h3>
+        </div>
+    <h3>Каталог: </h3>
+        <div ng-controller="ShoppingListController as shopController">
+        <ol>
+        <li ng-repeat="item in shopController.item"> 
+            <div ng-show="item.show===true">Доступно {{item.quantity}} упаковок йогурту {{item.mark}}
+            <button id="buttonGreen" type="button"  ng-click="shopController.hide($index);">Приховати</button>
+            <button id="buttonRed" type="button"  ng-click="shopController.remove($index);">Видалити</button>
+            </div>
+            </li>
+        </ol>
+        </div>
+    </div>
+    
+</body>
+</html>

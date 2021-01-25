@@ -1,0 +1,27 @@
+.text{
+    font-size: 42,35px;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+}
+.center{
+    text-align:center;
+}
+
+#buttonGreen{
+    background-color: white; 
+    margin: 0.2%; 
+    border: 2px solid #4CAF50;
+}
+#buttonGreen:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+#buttonRed{
+    background-color: white; 
+    margin: 0.2%;
+    border: 2px solid #f44336;
+}
+#buttonRed:hover{
+    background-color: #f44336;
+    color: white;
+}
